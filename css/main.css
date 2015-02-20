@@ -4695,3 +4695,6 @@ figure:hover:before {
 .content-section {
 	padding-top: 30px;
 }
+.avatar img {
+	width: 160px;
+}
