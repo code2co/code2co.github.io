@@ -4,11 +4,11 @@ var googleMap = function () {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+        var myLatlng = new google.maps.LatLng(40.222452, 28.86723);
 
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 11,
+            zoom: 16,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.SMALL
             },
@@ -17,118 +17,11 @@ var googleMap = function () {
             scrollwheel: false,
 
             // The latitude and longitude to center the map (always required)
-            center: myLatlng, // New York
+            center: myLatlng, // Bursa
 
             // How you would like to style the map. 
             // This is where you would paste any style found on Snazzy Maps.
-            styles: [{
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 17
-                }]
-            }, {
-                "featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 20
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 17
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 29
-                }, {
-                    "weight": 0.2
-                }]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 18
-                }]
-            }, {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 16
-                }]
-            }, {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 21
-                }]
-            }, {
-                "elementType": "labels.text.stroke",
-                "stylers": [{
-                    "visibility": "on"
-                }, {
-                    "color": "#000000"
-                }, {
-                    "lightness": 16
-                }]
-            }, {
-                "elementType": "labels.text.fill",
-                "stylers": [{
-                    "saturation": 36
-                }, {
-                    "color": "#000000"
-                }, {
-                    "lightness": 40
-                }]
-            }, {
-                "elementType": "labels.icon",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 19
-                }]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.fill",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 20
-                }]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.stroke",
-                "stylers": [{
-                    "color": "#000000"
-                }, {
-                    "lightness": 17
-                }, {
-                    "weight": 1.2
-                }]
-            }]
+            styles: [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#b5cbe4"}]},{"featureType":"landscape","stylers":[{"color":"#efefef"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#83a5b0"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#bdcdd3"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e3eed3"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}]
         };
 
         // Get the HTML DOM element that will contain your map 
@@ -141,7 +34,7 @@ var googleMap = function () {
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
-            title: 'Our offices',
+            title: 'Our Offices',
             options: {
                 icon: "img/marker.png"
             },
