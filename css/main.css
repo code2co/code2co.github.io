@@ -4691,3 +4691,7 @@ figure:hover:before {
 .text-muted a:focus {
   color: #8c8c8c;
 }
+
+.content-section {
+	padding-top: 20px;
+}
